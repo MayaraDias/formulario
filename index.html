@@ -32,7 +32,7 @@
       </header>
       <main>
         <div class="form">
-          <form class="myForm">
+          <form id="myForm">
             <fieldset class="fieldset">
               <div class="fieldset-wraper">
                 <legend>Informações pessoais</legend>
@@ -53,21 +53,88 @@
                   <label for="email"
                     >Email <span>(Digite um email válido)</span></label
                   >
-                  <input type="email" id="email" />
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    placeholder="seuemail@dominio.com"
+                  />
                 </div>
 
                 <div class="input-wrap">
                   <label for="password"
                     >Senha <span>(minímo de 6 caracteres)</span></label
                   >
-                  <input type="password" id="password" />
+                  <input type="password" id="password" required minlength="6" />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <div class="fieldset-wraper">
+                <legend>Informações do mentor</legend>
+                <div class="input-wrap">
+                  <label for="mentorName"
+                    >Nome do seu mentor <span>(só o primeiro nome)</span></label
+                  >
+                  <input type="text" id="mentorName" />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <div class="fieldset-wraper">
+                <legend>Seus horários disponíveis</legend>
+
+                <div class="mentorship">
+                  <h2>Primeira mentoria</h2>
+
+                  <div class="dateAndTime">
+                    <div class="input-wrap">
+                      <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                      <input type="date" id="date" />
+                    </div>
+
+                    <div class="input-wrap">
+                      <label for="mentorshipBegin">Das</label>
+                      <input type="time" id="mentorshipBegin" />
+                    </div>
+
+                    <div class="input-wrap">
+                      <label for="mentorshipEnd">Até</label>
+                      <input type="time" id="mentorshipEnd" />
+                    </div>
+                  </div>
+
+                  <h2>Segunda mentoria</h2>
+
+                  <div class="dateAndTime">
+                    <div class="input-wrap">
+                      <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                      <input type="date" id="date" />
+                    </div>
+
+                    <div class="input-wrap">
+                      <label for="mentorshipBegin">Das</label>
+                      <input type="time" id="mentorshipBegin" />
+                    </div>
+
+                    <div class="input-wrap">
+                      <label for="mentorshipEnd">Até</label>
+                      <input type="time" id="mentorshipEnd" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </fieldset>
           </form>
         </div>
       </main>
-      <footer></footer>
+      <footer class="footer">
+        <button type="submit" value="Salvar evento" form="myForm">
+          Salvar
+        </button>
+      </footer>
     </div>
   </body>
 </html>
