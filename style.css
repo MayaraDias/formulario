@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+
+:root{
+  --hue: 228;
+  --principal-color: hsl(var(--hue) 15% 38% );
+  --second-color:hsl(var(--hue) 14% 86%);
+  --third-color: hsl(var(--hue) 24% 97%);
+  --subtitle-color: hsl(var(--hue) 9%, 32%);
+  --button-color: hsl(348, 100%, 66%);
+  font-size: 62.5%;
+}
+
+body{
+  background-color: var(--second-color);
+}
+
+body::before{
+  content: "";
+  background-color: var(--principal-color);
+  width: 100%;
+  height: 42rem;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index:-1;
+}
+
+.container{
+  width: 75rem;
+  margin: 10rem auto;
+  
+}
+
+.header{
+  max-width: 42rem;
+
+}
+
+.header h1{
+  font-family: 'Staatliches', sans-serif;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 6rem;
+}
+
+.header p{
+  color: white;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin: 1.8rem 0 8.3rem;
+}
+
+.form{
+  background-color: var(--third-color);
+  min-height:200rem;
+  max-width: 75rem;
+  margin: auto;
+  border-radius: 17px;
+  padding: 6.4rem;
+}
+
+.fieldset{
+  border: none;
+}
+
+.fieldset-wraper{
+  display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.fieldset legend{
+  font-family: 'Staatliches', sans-serif;
+  color: var(--principal-color);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  margin-bottom: 1.6rem;
+  border-bottom: 1px solid #E6E6F0;
+  width: 100%;
+}
+
+.input-wrap{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrap input{
+  height: 5rem;
+  padding: 0 1.50rem;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  color: #4f495c;
+  margin-top:8px;
+}
+
+.informations{
+  display: flex;
+  gap:2rem;
+}
+
