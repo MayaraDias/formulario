@@ -14,6 +14,7 @@ O objetivo desse desafio é aplicar os conceitos as técnicas de:
 * Estruturação do html com as tags semânticas para construção de formulário como: form, fieldset, legend, label e inputs;
 * Aprofundamento de conceitos do css como o uso de pseudo-classes (hover, before);
 * Utilização de variáveis no CSS como forma de facilitar a estilização e futuras possíveis alterações do projeto.
+* Uso do *required* para fazer a validação de campos do input.
 
 ### Outros conceitos abordados
 
@@ -24,7 +25,7 @@ No stage 03 foi realizada dentro da aula sobre formulários uma breve introduç�
 * HTML
 * CSS
 
-O projeto final pode ser visto em: 
+O resultado final do projeto pode ser visto em: https://mayaradias.github.io/formulario/
 
 
 O layout do projeto foi disponibilizado no Figma.
